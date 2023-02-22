@@ -1,0 +1,78 @@
+h1{
+    
+    font-weight: bold;
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;}
+    section{
+       
+       box-sizing: border-box;
+        width: calc(33.33% - 20px);
+        margin:10px;
+        float: left;
+        margin: 10px;
+        background-color: rgb(173, 165, 165);
+       position: relative;
+        padding: 10px;
+        border: 4px solid black;
+    }
+    section > div{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: bold;
+      position: absolute;
+       top:0px;
+       right: 0px;
+       font-size: 20px;
+      background-color: brown;
+      padding: 2px 30px 2px 30px;
+      font-weight: bold;
+      border-left: 4px solid black;
+      border-bottom: 4px solid black;
+      
+    }
+    .child1{
+        background-color: pink;
+
+    }
+    .child2{
+        background-color: rgb(175, 75, 75);
+        color: white;
+    }
+    .child3{
+        background-color: rgb(204, 204, 37);
+    }   
+    p{
+        margin-top: 30px;
+    }
+    @media screen and (min-width:768px) and (max-width:991px) {
+        .parent3{
+            width:100px; 
+        }
+        .parent2,.parent1{
+          width: calc(50% -20px);
+          margin: 10px;
+        }
+        
+    }
+    
+    @media screen and (min-width: 768px) and (max-width: 991px) {
+        /* First 2 sections in the first row and of equal size */
+        .parent1, .parent2 {
+          width: calc(50% - 20px);
+          margin: 10px;
+        }
+        
+        /* 3rd section in the second row and take up the entire row */
+        .parent3 {
+          width: calc(100% - 20px);
+          margin: 10px;
+        }
+      }
+      @media screen and (max-width: 767px){
+        section{
+            width: calc(100% - 20px);
+            margin:10px;
+        }
+        
+      }
+     
+    
